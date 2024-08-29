@@ -1,102 +1,51 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro"
 
-// Componentes
-import Badge from "../components/Badge.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import SocialPill from "../components/SocialPill.astro";
-import Experience from "../components/Experience.astro";
-import Projects from "../components/Projects.astro";
-import AboutMe from "../components/AboutMe.astro";
-
-// Iconos
-import LinkedInIcon from "../icons/LinkedIn.astro";
-import GithubIcon from "../icons/Github.astro";
-import MailIcon from "../icons/Mail.astro";
-import BriefcaseIcon from "../icons/Briefcase.astro";
-import CodeIcon from "../icons/Code.astro";
-import AboutIcon from "../icons/About.astro";
+import AboutMe from "@/components/AboutMe.astro"
+import Briefcase from "@/icons/Briefcase.astro"
+import CodeIcon from "@/icons/Code.astro"
+import Experience from "@/components/Experience.astro"
+import ProfileCheck from "@/icons/ProfileCheck.astro"
+import Projects from "@/components/Projects.astro"
+import SectionContainer from "@/components/SectionContainer.astro"
+import Hero from "@/components/Hero.astro"
+import TitleSection from "@/components/TitleSection.astro"
 ---
 
 <Layout
-  title="Portfolio de Christ - Desarrollador y Programador web"
-  description="Contrata a Christ para crear tu aplicación web o móvil. Desarrollador Web. Especializado en crear aplicaciones únicas."
+  title="Porfolio de Christ - Desarrollador y Programador Web"
+  description="Contrata a Christ para crear tu aplicación web o móvil. Desarrollador Web. Especializado en crear aplicaciones novedosas."
 >
   <main class="px-4">
-    <SectionContainer class="py-16 md:py-36 ">
-      <div class="max-w-xl"> 
-        <div class="flex gap-4 mb-4">
-          <img
-            class="rounded-full shadow-lg size-16 object-cover"
-            src="../../src/assets/profile-photo.jpg"
-            alt="Christopher Jiménez"
-          />
-          <a
-            href="https://www.linkedin.com/in/chokchrist"
-            target="_blank"
-            rel="noopener"
-            class="flex items-center transition md:justify-center md:hover:scale-105"
-          >
-            <div class="flex items-center">
-              <Badge>Disponible para trabajar</Badge>
-            </div>
-          </a>
-        </div>
-
-        <h1
-          class="text-4xl font-bold tracking-tight sm:text-5xl text-white"
-        >
-          Hey, soy Christ
-        </h1>
-        <p class="mt-6 text-2xl text-gray-300">
-          <span
-            class="bg-gradient-to-l from-violet-500 via-blue-200 to-indigo-300 bg-clip-text text-transparent font-semibold"
-            >Desarrollador Full-Stack Web</span
-          > de Canarias, España ᴇs. Especializado en crear aplicaciones novedosas.
-        </p>
-
-        <nav class="flex gap-4 mt-8 flex-wrap">
-          <SocialPill href="https://www.linkedin.com/in/chokchrist/">
-            <LinkedInIcon class="size-4 md:size-6" />
-            LinkedIn
-          </SocialPill>
-
-          <SocialPill href="https://github.com/chokchrist">
-            <GithubIcon class="size-4 md:size-6" />
-            Github
-          </SocialPill>
-
-          <SocialPill href="mailto:christ.jmanzano@gmail.com">
-            <MailIcon class="size-4 md:size-6" />
-            Contáctame
-          </SocialPill>
-        </nav>
-      </div>
+    <SectionContainer class="py-16 md:py-36">
+      <Hero>
+      </slot>
+    </Hero>
     </SectionContainer>
     <div class="space-y-24">
-      <SectionContainer id="experiencia">
-        <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-          <BriefcaseIcon class="size-4 md:size-8" />
-          Experiencia laboral
-        </h2>
-        <Experience />
-      </SectionContainer>
-  
-      <SectionContainer id="proyectos">
-        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">
-          <CodeIcon class="size-4 md:size-8" />
-          Proyectos
-        </h2>
-        <Projects />
-      </SectionContainer>
+    <SectionContainer id="experiencia">
+      <TitleSection>
+        <Briefcase class="size-8" />
+        Experiencia laboral
+      </TitleSection>
+      <Experience />
+    </SectionContainer>
 
-      <SectionContainer id="sobre-mi">
-        <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">
-          <AboutIcon class="size-4 md:size-8" />
-          Sobre mí
-        </h2>
-        <AboutMe />
-      </SectionContainer>
-    </div>
+    <SectionContainer id="proyectos">
+      <TitleSection>
+        <CodeIcon class="size-7" />
+        Proyectos
+      </TitleSection>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <TitleSection>
+        <ProfileCheck class="size-8" />
+        Sobre mí
+      </TitleSection>
+      <AboutMe />
+    </SectionContainer>
+  </div>
   </main>
 </Layout>
