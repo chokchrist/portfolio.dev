@@ -1,0 +1,55 @@
+{
+  "SEO_TITLE": "Christ's Portfolio - Web Developer and Programmer",
+  "SEO_DESCRIPTION": "Hire Christ to build your web or mobile application. Web Developer specializing in creating innovative applications.",
+  
+  "ABOUT": {
+    "ID": "/#about",
+    "TITLE": "About me",
+    "DESCRIPTION_1": "My name is Christopher, but they call me CJ. I love focusing on design to provide the best user experience.",
+    "DESCRIPTION_2": "Among my achievements, I highlight that during my Higher Education studies, I helped my classmates delve deeper into database learning. I firmly believe in their relevance and enjoy sharing my knowledge about them.",
+    "DESCRIPTION_3": "I have experience in managing collaborative projects, aiming to provide practical and engaging solutions to enhance user experience in various areas."
+  },
+  
+  "EXPERIENCIE": {
+    "ID": "/#experience",
+    "TITLE": "Work Experience",
+    "DATE": "April 2023 - June 2023",
+    "JOB": "Systems Technician",
+    "COMPANY": "COFLP",
+    "DESCRIPTION": "I provided technical support, performed system maintenance, managed networks, administered equipment, and resolved technical issues both in-person and remotely."
+  },
+  
+  "FOOTER": {
+    "COPYRIGHT": "Almost all rights reserved.",
+    "ABOUT": "About me",
+    "CONTACT": "Contact"
+  },
+  
+  "HERO": {
+    "BADGE_SLOT": "Available for work",
+    "TITLE": "Hey, I'm Christ",
+    "TITLE_DESCRIPTION_1": "Full-Stack Web Developer",
+    "TITLE_DESCRIPTION_2": "from the Canary Islands, Spain ᴇs. Specializing in creating innovative applications.",
+    "NAV": {
+      "CONTACT": "Contact me"
+    }
+  },
+
+  "PROJECTS": {
+    "ID": "/#projects",
+    "TITLE": "Projects",
+    "DESCRIPTION": "Planify is an intuitive project and task management platform designed to maximize productivity and enhance team collaboration.",
+    "FOOTER" : {
+      "LINK": "Code",
+      "PREVIEW": "Preview"
+    }
+  },
+  "THEME_TOGGLE":{
+    "THEME": {
+      "LIGTH": "Ligth",
+      "DARK": "Dark",
+      "SYSTEM": "System"
+    },
+    "TITLE": "Choose theme"
+  }
+}

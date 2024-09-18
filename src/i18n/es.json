@@ -1,0 +1,56 @@
+{
+  "SEO_TITLE": "Porfolio de Christ - Desarrollador y Programador Web",
+  "SEO_DESCRIPTION": "Contrata a Christ para crear tu aplicación web o móvil. Desarrollador Web. Especializado en crear aplicaciones novedosas.",
+
+  "ABOUT": {
+    "ID": "/#sobre-mi",
+    "TITLE": "Sobre mí",
+    "DESCRIPTION_1": "Me llamo Christopher, aunque me dicen CJ. Me encanta enfocarme en el diseño para ofrecer la mejor experiencia al usuario.",
+    "DESCRIPTION_2": "Entre mis logros, destaco que durante el Grado Superior ayudé a mis compañeros a profundizar en el aprendizaje sobre bases de datos. Creo firmemente en su relevancia y disfruto compartiendo mi conocimiento al respecto.",
+    "DESCRIPTION_3": "Poseo experiencia en la gestión de proyectos colaborativos y los hago con el objetivo de ofrecer soluciones prácticas y atractivas para mejorar la experiencia del usuario en diversas áreas."
+  },
+
+  "EXPERIENCIE": {
+    "ID": "/#experiencia",
+    "TITLE": "Experiencia",
+    "DATE": "Abril 2023 - Junio 2023",
+    "JOB": "Técnico de Sistemas",
+    "COMPANY": "COFLP",
+    "DESCRIPTION": "Proporcioné soporte técnico, realicé mantenimiento de sistemas, gestioné redes, administré equipos y resolví problemas técnicos de manera presencial y remota."
+  },
+
+  "FOOTER": {
+    "COPYRIGHT": "Casi todos los derechos reservados.",
+    "ABOUT": "Sobre mí",
+    "CONTACT": "Contacto"
+  },
+
+  "HERO": {
+    "BADGE_SLOT": "Disponible para trabajar",
+    "TITLE": "Hola, soy Christ",
+    "TITLE_DESCRIPTION_1": "Desarrollador Full-Stack Web",
+    "TITLE_DESCRIPTION_2": "de las Islas Canarias, España. Especializado en crear aplicaciones novedosas.",
+    "NAV": {
+      "CONTACT": "Contáctame"
+    }
+  },
+
+  "PROJECTS": {
+    "ID": "/#proyectos",
+    "TITLE": "Proyectos",
+    "DESCRIPTION": "Planify es una plataforma intuitiva de gestión de proyectos y tareas diseñada para maximizar la productividad y mejorar la colaboración en equipo.",
+    "FOOTER": {
+      "LINK": "Código",
+      "PREVIEW": "Vista previa"
+    }
+  },
+
+  "THEME_TOGGLE": {
+    "THEME": {
+      "LIGTH": "Claro",
+      "DARK": "Oscuro",
+      "SYSTEM": "Sistema"
+    },
+    "TITLE": "Elegir tema"
+  }
+}
