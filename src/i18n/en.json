@@ -3,7 +3,7 @@
   "SEO_DESCRIPTION": "Hire Christ to build your web or mobile application. Web Developer specializing in creating innovative applications.",
   
   "ABOUT": {
-    "ID": "/#about",
+    "ID": "about",
     "TITLE": "About me",
     "DESCRIPTION_1": "My name is Christopher, but they call me CJ. I love focusing on design to provide the best user experience.",
     "DESCRIPTION_2": "Among my achievements, I highlight that during my Higher Education studies, I helped my classmates delve deeper into database learning. I firmly believe in their relevance and enjoy sharing my knowledge about them.",
@@ -11,7 +11,7 @@
   },
   
   "EXPERIENCIE": {
-    "ID": "/#experience",
+    "ID": "experience",
     "TITLE": "Work Experience",
     "DATE": "April 2023 - June 2023",
     "JOB": "Systems Technician",
@@ -36,7 +36,7 @@
   },
 
   "PROJECTS": {
-    "ID": "/#projects",
+    "ID": "projects",
     "TITLE": "Projects",
     "DESCRIPTION": "Planify is an intuitive project and task management platform designed to maximize productivity and enhance team collaboration.",
     "FOOTER" : {

@@ -3,7 +3,7 @@
   "SEO_DESCRIPTION": "Contrata a Christ para crear tu aplicación web o móvil. Desarrollador Web. Especializado en crear aplicaciones novedosas.",
 
   "ABOUT": {
-    "ID": "/#sobre-mi",
+    "ID": "sobre",
     "TITLE": "Sobre mí",
     "DESCRIPTION_1": "Me llamo Christopher, aunque me dicen CJ. Me encanta enfocarme en el diseño para ofrecer la mejor experiencia al usuario.",
     "DESCRIPTION_2": "Entre mis logros, destaco que durante el Grado Superior ayudé a mis compañeros a profundizar en el aprendizaje sobre bases de datos. Creo firmemente en su relevancia y disfruto compartiendo mi conocimiento al respecto.",
@@ -11,7 +11,7 @@
   },
 
   "EXPERIENCIE": {
-    "ID": "/#experiencia",
+    "ID": "experiencia",
     "TITLE": "Experiencia",
     "DATE": "Abril 2023 - Junio 2023",
     "JOB": "Técnico de Sistemas",
@@ -36,7 +36,7 @@
   },
 
   "PROJECTS": {
-    "ID": "/#proyectos",
+    "ID": "proyectos",
     "TITLE": "Proyectos",
     "DESCRIPTION": "Planify es una plataforma intuitiva de gestión de proyectos y tareas diseñada para maximizar la productividad y mejorar la colaboración en equipo.",
     "FOOTER": {
