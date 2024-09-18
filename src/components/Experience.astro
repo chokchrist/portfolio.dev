@@ -1,13 +1,16 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
 
+import { getI18N } from "@/i18n"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 const EXPERIENCE = [
   {
-    date: "Abril 2023 - Junio 2023",
-    title: "Técnico de Sistemas",
-    company: "COFLP",
-    description:
-      "Proporcioné soporte técnico, realicé mantenimiento de sistemas, gestioné redes, administré equipos y resolví problemas técnicos de manera presencial y remota.",
+    date: i18n.EXPERIENCIE.DATE,
+    title: i18n.EXPERIENCIE.JOB,
+    company: i18n.EXPERIENCIE.COMPANY,
+    description: i18n.EXPERIENCIE.DESCRIPTION,
   }
 ]
 ---

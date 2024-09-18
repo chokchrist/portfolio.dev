@@ -1,28 +1,36 @@
 ---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
 import ThemeToggle from "./ThemeToggle.astro"
+import LanguageSelector from "./LanguageSelector.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang)
 
 const navItems = [
   {
-    title: "Experiencia",
+    title: t('nav.experience'),
     label: "experiencia",
-    url: "/#experiencia",
+    url: getRelativeLocaleUrl(lang, `/#${t('nav.experience')}`).toLowerCase().replace(/\/$/, ''), // Fragmento dinámico
   },
   {
-    title: "Proyectos",
+    title: t('nav.proyects'),
     label: "proyectos",
-    url: "/#proyectos",
+    url: getRelativeLocaleUrl(lang, `/#${t('nav.proyects')}`).toLowerCase().replace(/\/$/, ''),
   },
   {
-    title: "Sobre mí",
+    title: t('nav.about'),
     label: "sobre-mi",
-    url: "/#sobre-mi",
+    url: getRelativeLocaleUrl(lang, `/#${t('nav.about')}`).toLowerCase().replace(/\/$/, ''),
   },
   {
-    title: "Contacto",
+    title: t('nav.contact'),
     label: "contacto",
-    url: "mailto:miduga@gmail.com",
+    url: "mailto:christ.jmanzano@gmail.com",
   },
-]
+];
+
 ---
 
 <header
@@ -42,6 +50,7 @@ const navItems = [
         </a>
       ))
     }
+    <LanguageSelector />
     <ThemeToggle />
   </nav>
 </header>
