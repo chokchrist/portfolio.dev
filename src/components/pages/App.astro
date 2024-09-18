@@ -28,7 +28,7 @@ const i18n = getI18N({ currentLocale })
     </Hero>
     </SectionContainer>
     <div class="space-y-24">
-    <SectionContainer id="experiencia">
+    <SectionContainer id={i18n.EXPERIENCIE.ID}>
       <TitleSection>
         <Briefcase class="size-8" />
         {i18n.EXPERIENCIE.TITLE}
@@ -36,7 +36,7 @@ const i18n = getI18N({ currentLocale })
       <Experience />
     </SectionContainer>
 
-    <SectionContainer id="proyectos">
+    <SectionContainer id={i18n.PROJECTS.ID}>
       <TitleSection>
         <CodeIcon class="size-7" />
         {i18n.PROJECTS.TITLE}
@@ -44,7 +44,7 @@ const i18n = getI18N({ currentLocale })
       <Projects />
     </SectionContainer>
 
-    <SectionContainer id="sobre-mi">
+    <SectionContainer id={i18n.ABOUT.ID}>
       <TitleSection>
         <ProfileCheck class="size-8" />
         {i18n.ABOUT.TITLE}
