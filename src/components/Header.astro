@@ -8,21 +8,26 @@ import LanguageSelector from "./LanguageSelector.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang)
 
+import { getI18N } from "@/i18n"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
 const navItems = [
   {
     title: t('nav.experience'),
     label: "experiencia",
-    url: getRelativeLocaleUrl(lang, `/#${t('nav.experience')}`).toLowerCase().replace(/\/$/, ''), // Fragmento dinámico
+    url: getRelativeLocaleUrl(lang, `/#${i18n.EXPERIENCIE.ID}`).toLowerCase().replace(/\/$/, ''), // Fragmento dinámico
   },
   {
     title: t('nav.proyects'),
     label: "proyectos",
-    url: getRelativeLocaleUrl(lang, `/#${t('nav.proyects')}`).toLowerCase().replace(/\/$/, ''),
+    url: getRelativeLocaleUrl(lang, `/#${i18n.PROJECTS.ID}`).toLowerCase().replace(/\/$/, ''),
   },
   {
     title: t('nav.about'),
     label: "sobre-mi",
-    url: getRelativeLocaleUrl(lang, `/#${t('nav.about')}`).toLowerCase().replace(/\/$/, ''),
+    url: getRelativeLocaleUrl(lang, `/#${i18n.ABOUT.ID}`).toLowerCase().replace(/\/$/, ''),
   },
   {
     title: t('nav.contact'),
