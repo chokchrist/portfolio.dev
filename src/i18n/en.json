@@ -11,12 +11,26 @@
   },
   
   "EXPERIENCIE": {
-    "ID": "experience",
     "TITLE": "Work Experience",
-    "DATE": "April 2023 - June 2023",
-    "JOB": "Systems Technician",
-    "COMPANY": "COFLP",
-    "DESCRIPTION": "I provided technical support, performed system maintenance, managed networks, administered equipment, and resolved technical issues both in-person and remotely."
+    "ID": "experience",
+    "EXPERIENCE_1": {
+      "DATE": "October 2024 - Present",
+      "JOB": "Web Developer",
+      "COMPANY": "Freelancer",
+      "DESCRIPTION": "Developed and maintained personal and simulated web projects. Participated in hackathons, contributed to open-source projects, and created full-stack applications as part of my training and professional development."  
+    },
+    "EXPERIENCIE_2": {
+      "DATE": "September 2024",
+      "JOB": "Network Technician",
+      "COMPANY": "La Casa Del PC S.L",
+      "DESCRIPTION": "Managed the installation, configuration, and administration of IT equipment, optimized inventory, and resolved 100% of reported issues, improving on-site support quality."
+    },
+    "EXPERIENCIE_3": {
+      "DATE": "April 2023 - June 2023",
+      "JOB": "Systems Technician",
+      "COMPANY": "COFLP",
+      "DESCRIPTION": "Provided technical support, performed system maintenance, managed networks, administered equipment, and resolved technical issues both in-person and remotely."  
+    }
   },
   
   "FOOTER": {
@@ -43,13 +57,5 @@
       "LINK": "Code",
       "PREVIEW": "Preview"
     }
-  },
-  "THEME_TOGGLE":{
-    "THEME": {
-      "LIGTH": "Ligth",
-      "DARK": "Dark",
-      "SYSTEM": "System"
-    },
-    "TITLE": "Choose theme"
   }
 }
