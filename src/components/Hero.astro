@@ -4,12 +4,21 @@ const personalImageAlt = "Christopher Jiménez"
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/icons/LinkedIn.astro"
 import MailIcon from "@/icons/Mail.astro"
+import CVIcon from "@/icons/Cv.astro"
 import SocialPill from "@/components/SocialPill.astro"
 
 import { getI18N } from "@/i18n"
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
+
+const locale = Astro.url.pathname.includes('/en') ? 'en' : 'es';
+
+// Definimos las rutas de los CVs para ambos idiomas
+const cvFile = locale === 'en' 
+  ? '/Christopher Jiménez - CV EN.pdf' 
+  : '/Christopher Jiménez - CV ES.pdf';
+
 ---
 
 <div class="max-w-xl">
@@ -45,6 +54,10 @@ const i18n = getI18N({ currentLocale })
     <SocialPill href="https://linkedin.com/in/chokchrist">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill href={cvFile} download="Christopher Jiménez - CV">
+      <CVIcon class="size-4" />
+      CV
     </SocialPill>
   </nav>
 </div>
