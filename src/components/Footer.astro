@@ -18,13 +18,13 @@ const currentYear = new Date().getFullYear()
       © {currentYear} chokchrist. {i18n.FOOTER.COPYRIGHT}
     </span>
     <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90"
+      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
     >
       <li>
-        <a href="/#sobre-mi" class="hover:underline me-4 md:me-6">{i18n.FOOTER.ABOUT}</a>
+        <a href=`/#${i18n.ABOUT.ID}` class="hover:underline me-4 md:me-6">{i18n.FOOTER.ABOUT}</a>
       </li>
       <li>
-        <a id="contacto" href="mailto:christ.jmanzano@gmail.com" class="hover:underline"
+        <a href="mailto:christ.jmanzano@gmail.com" class="hover:underline"
           >{i18n.FOOTER.CONTACT}</a
         >
       </li>
